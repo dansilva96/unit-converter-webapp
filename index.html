@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Unit convert</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- LADO ESQUERDO (FORMULÁRIO) -->
+    <section class="card">
+      <h1>Unit convert</h1>
+
+      <!-- Abas -->
+      <div class="tabs">
+        <button class="btn-tab active" id="btn-length" data-type="length">Length</button>
+        <button class="btn-tab" id="btn-weight" data-type="weight">Weight</button>
+        <button class="btn-tab" id="btn-temp" data-type="temperature">Temperature</button>
+      </div>
+
+      <!-- Formulário -->
+      <form id="convert-form">
+
+        <label id="lab-value" for="value">Enter the length to convert</label>
+        <input id="convert-value" type="number" step="any" required>
+
+        <label for="convert-from">Unit to convert from</label>
+        <select id="convert-from"></select>
+
+        <label for="convert-to">Unit to convert to</label>
+        <select id="convert-to"></select>
+
+        <button id="btn-submit" type="submit" class="btn-convert">Convert</button>
+
+      </form>
+    </section>
+
+    <!-- LADO DIREITO (RESULTADO) -->
+    <section class="card result-card">
+      <h1>Unit convert</h1>
+
+      <!-- Resultado -->
+      <div class="result">
+        <p>Result of your calculation</p>
+        <h2 id="result">--</h2>
+
+        <button id="btn-reset">Reset</button>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
